@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sandesh Dangal | Portfolio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #1a1a1a;
+        color: white;
+        scroll-behavior: smooth;
+    }
+
+    .section {
+        min-height: 100vh;
+        padding: 100px 0;
+    }
+
+    .section-container {
+        border: 4px solid #ff0000;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+        border-radius: 24px;
+        padding: 50px;
+        max-width: 95%;
+        margin: auto;
+    }
+
+    h1 { font-size: 5rem; }
+    h2 { font-size: 3.5rem; }
+    h3 { font-size: 2.5rem; }
+    p, li, span { font-size: 1.8rem; }
+    .skill-card h3, .hobby-item span { font-size: 2rem; }
+
+    .nav-link { position: relative; font-size: 1.5rem; }
+    .nav-link::after { content: ''; position: absolute; width: 0; height: 3px; bottom: -2px; left: 0; background-color: #ff0000; transition: width 0.3s ease; }
+    .nav-link:hover::after { width: 100%; }
+
+    .skill-card:hover { transform: translateY(-8px); box-shadow: 0 12px 25px rgba(255, 0, 0, 0.3); }
+    .hobby-icon { transition: all 0.3s ease; }
+    .hobby-item:hover .hobby-icon { transform: scale(1.5); color: #ff0000; }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="fixed w-full bg-gray-900 z-50 shadow-lg">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+        <div class="flex-shrink-0">
+            <span class="text-white font-bold text-3xl">Sandesh Dangal</span>
+        </div>
+        <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-6">
+                <a href="#home" class="nav-link text-white hover:text-red-500">Home</a>
+                <a href="#about" class="nav-link text-white hover:text-red-500">About</a>
+                <a href="#education" class="nav-link text-white hover:text-red-500">Education</a>
+                <a href="#experience" class="nav-link text-white hover:text-red-500">Experience</a>
+                <a href="#skills" class="nav-link text-white hover:text-red-500">Skills</a>
+                <a href="#contact" class="nav-link text-white hover:text-red-500">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="section flex items-center justify-center">
+    <div class="section-container text-center">
+        <title> SANDESH DANGAL </title>
+        <h1>Rover Scout | Student | Social Worker</title>
+        <p>Welcome to my comprehensive portfolio. Here, you will find detailed insights into my academic journey, scouting achievements, social initiatives, hobbies, and a wide range of skills I have developed over the years. This portfolio aims to showcase my dedication, leadership abilities, and community engagement efforts.</p>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section">
+    <div class="section-container">
+        <h1 class="text-center mb-10">About Me</h1>
+        <p>I am a passionate Rover Scout and a committed student currently pursuing higher education in Computer Science. Beyond academics, I devote significant time to social work, participating in community development programs, awareness campaigns, and voluntary projects aimed at improving the lives of those in need. My philosophy revolves around service, leadership, and continuous self-improvement.</p>
+        <h3 class="mt-12 mb-6">Hobbies & Interests</h3>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+            <div class="hobby-item flex items-center">
+                <i class="fas fa-bicycle hobby-icon mr-4 text-red-500"></i>
+                <span>Cycling through nature and city trails to maintain fitness and explore new places.</span>
+            </div>
+            <div class="hobby-item flex items-center">
+                <i class="fas fa-music hobby-icon mr-4 text-red-500"></i>
+                <span>Listening and creating music to relax and inspire creativity.</span>
+            </div>
+            <div class="hobby-item flex items-center">
+                <i class="fas fa-book hobby-icon mr-4 text-red-500"></i>
+                <span>Reading books on leadership, psychology, and technology to expand knowledge.</span>
+            </div>
+            <div class="hobby-item flex items-center">
+                <i class="fas fa-hands-helping hobby-icon mr-4 text-red-500"></i>
+                <span>Engaging in social work and volunteer initiatives to make a positive impact.</span>
+            </div>
+            <div class="hobby-item flex items-center">
+                <i class="fas fa-guitar hobby-icon mr-4 text-red-500"></i>
+                <span>Playing musical instruments to develop skill and artistic expression.</span>
+            </div>
+            <div class="hobby-item flex items-center">
+                <i class="fas fa-gamepad hobby-icon mr-4 text-red-500"></i>
+                <span>Video gaming for strategy building, teamwork, and recreation.</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="section">
+    <div class="section-container">
+        <h2 class="text-center mb-10">Education</h2>
+        <div class="space-y-12">
+            <div>
+                <h3>Bright Future English School</h3>
+                <p>Completed 10th Grade with distinction. Actively participated in student leadership programs, science fairs, and community events.</p>
+            </div>
+            <div>
+                <h3>Vishwa Adarsha College</h3>
+                <p>Currently pursuing +2 in Computer Science. Engaged in coding clubs, robotics workshops, and technology competitions. Consistently involved in research projects and peer mentoring activities.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="section">
+    <div class="section-container">
+        <h2 class="text-center mb-10">Experience</h2>
+        <div class="grid md:grid-cols-2 gap-10">
+            <div class="bg-gray-700 p-8 rounded-lg">
+                <h3>Nepal Scout</h3>
+                <p>Joined as Boy Scout in 2078. Promoted to Rover Scout crew member in 2080. Led community service initiatives, camp activities, and training programs for younger scouts. Participated in national and international scouting events.</p>
+            </div>
+            <div class="bg-gray-700 p-8 rounded-lg">
+                <h3>Achievements & Awards</h3>
+                <ul class="list-disc pl-6 space-y-3">
+                    <li>Rover Scout membership (2080)</li>
+                    <li>Service Quality Badge (SQ) (2081)</li>
+                    <li>Organized multiple community service projects and environmental campaigns</li>
+                    <li>Recognized for leadership and teamwork in regional scouting events</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section">
+    <div class="section-container">
+        <h2 class="text-center mb-10">Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-10">
+            <div class="skill-card bg-gray-800 p-8 rounded-lg text-center">
+                <i class="fas fa-users text-red-500 text-4xl mb-4"></i>
+                <h3>Leadership</h3>
+                <p>Leading teams in scouting and social projects effectively with responsibility and accountability.</p>
+            </div>
+            <div class="skill-card bg-gray-800 p-8 rounded-lg text-center">
+                <i class="fas fa-bullhorn text-red-500 text-4xl mb-4"></i>
+                <h3>Public Speaking</h3>
+                <p>Experienced in addressing large audiences, delivering presentations, and conducting workshops.</p>
+            </div>
+            <div class="skill-card bg-gray-800 p-8 rounded-lg text-center">
+                <i class="fas fa-lightbulb text-red-500 text-4xl mb-4"></i>
+                <h3>Problem Solving</h3>
+                <p>Creative and logical approach to solving technical and social challenges effectively.</p>
+            </div>
+            <div class="skill-card bg-gray-800 p-8 rounded-lg text-center">
+                <i class="fas fa-hands-helping text-red-500 text-4xl mb-4"></i>
+                <h3>Volunteering</h3>
+                <p>Participating in multiple social projects to benefit the community and environment.</p>
+            </div>
+            <div class="skill-card bg-gray-800 p-8 rounded-lg text-center">
+                <i class="fas fa-campground text-red-500 text-4xl mb-4"></i>
+                <h3>Camping Skills</h3>
+                <p>Expertise in outdoor activities, survival skills, and organizing camp events.</p>
+            </div>
+            <div class="skill-card bg-gray-800 p-8 rounded-lg text-center">
+                <i class="fas fa-paint-brush text-red-500 text-4xl mb-4"></i>
+                <h3>Creativity</h3>
+                <p>Innovative thinking in arts, projects, and problem-solving scenarios.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section">
+    <div class="section-container text-center">
+        <h2 class="mb-8">Contact Us</h2>
+        <p><i class="fas fa-phone mr-2"></i> +977-9746888040</p>
+        <p><i class="fas fa-envelope mr-2"></i> sandesh.dangal2064@gmail.com</p>
+        <p><i class="fab fa-facebook mr-2"></i> facebook.com/sandesh.dangal</p>
+        <p><i class="fab fa-instagram mr-2"></i> instagram.com/sandesh.dangal</p>
+        <p class="mt-6">Feel free to reach out for collaborations, mentorship, or any inquiries about my projects and community work.</p>
+    </div>
+</section>
+
+</body>
+</html>
